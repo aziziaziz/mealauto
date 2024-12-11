@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Debug Playwright",
+      "type": "shell",
+      "command": "npx playwright test tests/${fileBasename} --debug"
+    },
+    {
+      "label": "Debug Playwright At Line",
+      "type": "shell",
+      "command": "node ./.vscode/run.js ${relativeFile} ${lineNumber} | ForEach-Object { npx playwright test tests/${fileBasename}:$_ --debug }"
+    },
+    {
+      "label": "UI Playwright",
+      "type": "shell",
+      "command": "npx playwright test tests/${fileBasename} --ui"
+    },
+    {
+      "label": "UI Playwright At Line",
+      "type": "shell",
+      "command": "node ./.vscode/run.js ${relativeFile} ${lineNumber} | ForEach-Object { npx playwright test tests/${fileBasename}:$_ --ui }"
+    }
+  ]
+}
