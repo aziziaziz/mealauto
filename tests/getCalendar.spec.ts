@@ -32,6 +32,8 @@ test("getCalendar", async ({ page }) => {
   const loginButton = page.getByRole("button", { name: "Login" });
   await loginButton.click();
 
+  await page.waitForLoadState("domcontentloaded");
+
   // After login go the leave application page
   await page.goto("https://econnect.fourtitude.asia/LMS/LeaveApplication");
 
