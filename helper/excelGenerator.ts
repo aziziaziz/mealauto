@@ -254,9 +254,9 @@ const getExcelDetails = (month: string, days: Array<ClaimDay>) => {
 
     if (canClaim) {
       const isLeave = canClaim.type == "leave";
-      if (isLeave) {
-        additionalMergeRow.push(i);
-      }
+      // if (isLeave) {
+      //   additionalMergeRow.push(i);
+      // }
 
       dateRow.push([
         setCellValue({
@@ -267,7 +267,7 @@ const getExcelDetails = (month: string, days: Array<ClaimDay>) => {
         setCellValue({
           value: canClaim.desc || "",
           fullBorder: true,
-          hCenter: canClaim.type == "leave" ? "center" : "left",
+          // hCenter: canClaim.type == "leave" ? "center" : "left",
         }),
         setCellValue({ value: "", fullBorder: true }),
         setCellValue({ value: "", fullBorder: true }),
@@ -297,7 +297,7 @@ const getExcelDetails = (month: string, days: Array<ClaimDay>) => {
         }),
       ]);
     } else {
-      dateRow.push([
+      const previous = dateRow.push([
         setCellValue({
           value: getDayWithSuffix(i),
           fullBorder: true,

@@ -47,6 +47,8 @@ test("getCalendar", async ({ page }) => {
     60000
   );
 
+  await page.pause();
+
   // Go to previous calendar month
   const tableHeaderButtons = await getLocator(
     calendarContainer[0].locator(".table > .calendar-month-header > th")

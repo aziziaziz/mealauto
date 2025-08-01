@@ -39,8 +39,8 @@ interface constants {
 }
 
 export const globalVariables: constants = {
-  USERID: "xxxxx",
-  PASSWORD: "xxxxx",
+  USERID: "FM177",
+  PASSWORD: "Alyafatysa_3113",
 
   ALL_MONTHS: [
     "January",
@@ -58,18 +58,19 @@ export const globalVariables: constants = {
   ],
 
   // For excel headers
-  FULLNAME: "FULLNAME", // Your full name to save in the excel header
-  SHORTNAME: "SHORTNAME", // Short name for the excel file name
-  SUPERVISOR: "SUPERVISOR",
-  POSITION: "POSITION",
-  COMPANY: "COMPANY",
-  DESCRIPTION: "DESCRIPTION",
-  LOCATION: "LOCATION",
+  FULLNAME: "Muhammad Azizi bin Abdul Aziz", // Your full name to save in the excel header
+  SHORTNAME: "Azizi", // Short name for the excel file name
+  SUPERVISOR: "Chong Hsu-Cherng",
+  POSITION: "FRONT-END DEVELOPER",
+  COMPANY: "FUEL MEDIA SDN BHD",
+  DESCRIPTION: "Meal Allowance",
+  LOCATION: "AIS/BS",
   START_TIME: "9:00 AM",
   END_TIME: "6:00 PM",
   AMOUNT: 10,
   EXCEL_FILENAME: "027-HRA-FRM-MRF-Rev 2 (Meal Reimbursement Form)_FMSB",
-  SAVE_LOCATION: "C:\\Users\\USER\\Documents",
+  SAVE_LOCATION:
+    "C:\\Users\\FUEL-Muhammad.Azizi\\Desktop\\New folder Testing\\New folder",
 };
 
 const checkCountInterval = async (locator: Locator) => {
